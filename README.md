@@ -1,7 +1,7 @@
 # numberGuessingGame
 
 This is number guessing game :
-Project Url : https://github.com/lalbhushan2014/numberGuessingGame
+Url : https://roadmap.sh/projects/number-guessing-game
 
 It is a CLI-based game, so you need to use the command line to interact with the game. The game should work as follows:
 
