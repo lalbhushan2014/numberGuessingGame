@@ -114,7 +114,7 @@ async function storeGameScore(gameInfo) {
 }
 
 async function resumeGame() {
-	let resumeGameStatus = await askQuestion("Do you want to play another round of game? (yes/no): ");
+	let resumeGameStatus = await askQuestion("\nDo you want to play another round of game? (yes/no): ");
 
 	resumeGameStatus = resumeGameStatus.trim().toLowerCase();
 
@@ -196,7 +196,7 @@ async function startGame() {
 	}
 
 	if (!guessedCorrectly) {
-		console.log(`Game Over! The correct number was ${developerChoice}.`);
+		console.log(`\nGame Over! The correct number was ${developerChoice}.`);
 	}
 
 	// console.log(`trials ${trials}, developerChoice ${developerChoice} and maxTrials ${maxTrials}`);
@@ -221,7 +221,7 @@ async function startGame() {
 	if (resumeStatus) {
 		await startGame();
 	} else {
-		console.log(`Thank You for playing the game. Visit again for more thrills.`);
+		console.log(`\nThank You for playing the game. Visit again for more thrills.`);
 		rl.close();
 	}
 	// resume the game end
